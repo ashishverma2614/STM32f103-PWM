@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"bluepill_led_pwm\stm32f1xx_hal_msp.o"
+"bluepill_led_pwm\main.o"
+"bluepill_led_pwm\stm32f1xx_it.o"
+"bluepill_led_pwm\system_stm32f1xx.o"
+"bluepill_led_pwm\stm32f1xx_hal_rcc.o"
+"bluepill_led_pwm\stm32f1xx_hal_gpio.o"
+"bluepill_led_pwm\stm32f1xx_hal_gpio_ex.o"
+"bluepill_led_pwm\stm32f1xx_hal_flash_ex.o"
+"bluepill_led_pwm\stm32f1xx_hal_dma.o"
+"bluepill_led_pwm\stm32f1xx_hal_flash.o"
+"bluepill_led_pwm\stm32f1xx_hal.o"
+"bluepill_led_pwm\stm32f1xx_hal_tim.o"
+"bluepill_led_pwm\stm32f1xx_hal_rcc_ex.o"
+"bluepill_led_pwm\stm32f1xx_hal_tim_ex.o"
+"bluepill_led_pwm\stm32f1xx_hal_cortex.o"
+"bluepill_led_pwm\stm32f1xx_hal_pwr.o"
+"bluepill_led_pwm\startup_stm32f103xb.o"
+--library_type=microlib --strict --scatter "BLUEPILL_LED_PWM\BLUEPILL_LED_PWM.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BLUEPILL_LED_PWM.map" -o BLUEPILL_LED_PWM\BLUEPILL_LED_PWM.axf
